@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap');
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+:root{
+   --bg-color:#1a1a1a;
+   --accet-color: #d95700;
+   --font-color:#fff;
+   --button-color: #323232;
+}
+body{
+   background-color:#1a1a1a;
+   height: 94vh;
+   font-family: 'Josefin Sans', sans-serif;
+   color: var(--font-color);
+   letter-spacing: .1rem;
+}
+
+h1{
+   color: var(--accet-color);
+   font-size: 3em;
+   text-align: center;
+   font-weight: 500;
+}
+
+header{
+   gap: 1rem;
+   margin: 1rem;
+}
+#inputsName{
+   display: grid;
+   gap: .5rem;
+   justify-content: center;
+   font-size: 1.3rem;
+}
+#inputsName input{
+   font-size: 1.1rem;
+   text-align: center;
+}
+#inputsName button{
+   border-radius: .45rem;
+   padding: .3rem;
+   font-size: 1.2rem;
+   background-color: var(--accet-color);
+   color: var(--font-color);
+   cursor: pointer;
+   border: 1px solid var(--accet-color);
+   transition: .2s;
+   font-family: 'Josefin Sans', sans-serif;
+}
+#inputsName button:hover{
+   background-color: var(--bg-color);
+   border: 1px solid var(--accet-color);
+}
+#turnPlayer{
+   color: var(--accet-color);
+}
+main{
+   display: block;
+   display: flex;
+   justify-content: space-between;
+   margin: 2rem 0;
+}
+.playerBox{
+   background-color: var(--accet-color);
+   padding: 1rem;
+   font-size: 2em;
+   gap: .8rem;
+   border-radius: .5rem;
+   margin: .5rem;
+   height: 10rem;
+   width: 12rem;
+   align-items: center;
+   color: var(--button-color);
+}
+
+.playerName{
+   color: var(--font-color);
+}
+
+#theGame{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: .7rem;
+   background-color: var(--font-color);
+}
+.regionBoard{
+   height: 8rem;
+   width: 8rem;
+   font-size: 5em;
+   color: var(--font-color);
+   border: none;
+   cursor: pointer;
+   background-color: var(--bg-color);
+   transition: .3s;
+}
+.regionBoard:hover{
+   filter:brightness(1.6);
+}
+
+.victory{
+   color: var(--accet-color);
+}
+
+.display-flexDirection-textAlign{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
