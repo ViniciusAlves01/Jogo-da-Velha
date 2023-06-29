@@ -20,6 +20,7 @@ function startGame(){
       position.disabled = false
       position.addEventListener('click', markRegion)
    })
+   
 }
 //Função para adicionar o nome dos jogadores as caixas laterais correspondentes
 function addPlayerName(){
